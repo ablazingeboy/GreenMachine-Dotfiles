@@ -77,7 +77,7 @@ font-4 = Iosevka Term:fontformat=truetype:size=12;3
 
 modules-left = i3
 modules-center = 
-modules-right = pulseaudio cpu memory wlan date powermenu
+modules-right = pulseaudio cpu memory wlan xkeyboard date powermenu
 ; tray-position = right
 ; tray-padding = 2
 ;tray-background = #0063ff
@@ -104,11 +104,11 @@ label = %title:0:30:...%
 type = internal/xkeyboard
 blacklist-0 = num lock
 
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
+format-prefix = " "
+format-prefix-foreground = ${colors.accent}
 format-prefix-underline = ${colors.secondary}
 
-label-layout = %layout%
+label-layout = %name%
 label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
