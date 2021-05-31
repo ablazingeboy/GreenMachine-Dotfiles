@@ -21,8 +21,8 @@ font:
     style: Italic
 window:
   padding:
-    x: 5
-    y: 5
+    x: 20
+    y: 20
 # Colors (Horizon Dark)
 colors:
   # Primary colors

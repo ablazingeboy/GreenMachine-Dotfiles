@@ -69,15 +69,15 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = Iosevka Term:pixelsize=13;4
+font-0 = Iosevka Term:pixelsize=12;4
 font-1 = Iosevka Term:fontformat=truetype:size=12;3
 font-2 = Iosevka Term:pixelsize=12;1
 font-3 = Iosevka Term:fontformat=truetype:size=17;3
-font-4 = Iosevka Term:fontformat=truetype:size=14;3
+font-4 = Iosevka Term:fontformat=truetype:size=12;3
 
 modules-left = i3
 modules-center = 
-modules-right = xbacklight pulseaudio wlan temperature date powermenu
+modules-right = pulseaudio cpu memory wlan date powermenu
 ; tray-position = right
 ; tray-padding = 2
 ;tray-background = #0063ff
@@ -227,8 +227,8 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = ﬙
-format-prefix-font = 4
+format-prefix = "﬙ "
+format-prefix-font = 5
 format-prefix-foreground = ${colors.accent}
 format-underline = #f90000
 label = %percentage:2%%
@@ -236,14 +236,15 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-prefix = " "
+format-prefix-font = 5
+format-prefix-foreground = ${colors.accent}
+format-underline = #f90000
 label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp2s0
+interface = wlp0s29u1u7
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
@@ -296,8 +297,9 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = 墳 %percentage%%
 label-volume-foreground = ${root.foreground}
+label-volume-font = 5
 
 label-muted = muted
 label-muted-foreground = #666
@@ -307,12 +309,12 @@ bar-volume-foreground = ${colors.accent}
 
 bar-volume-gradient = false
 bar-volume-indicator = ⏽
-bar-volume-indicator-font = 2
+bar-volume-indicator-font = 5
 bar-volume-fill = ⏽
-bar-volume-fill-font = 2
+bar-volume-fill-font = 5
 bar-volume-fill-foreground = ${colors.accent}
 bar-volume-empty = ⏽
-bar-volume-empty-font = 2
+bar-volume-empty-font = 5
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/alsa]
@@ -415,35 +417,12 @@ ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
-type = custom/menu
+type = custom/text
+content = ""
+content-font = 5
+content-foreground = ${colors.accent}
+click-left = rofi -show power-menu -modi power-menu:rofi-power-menu -theme fabian
 
-expand-right = true
-
-format-spacing = 1
-
-label-open = 
-label-open-foreground = ${colors.accent}
-label-close =  cancel
-label-close-foreground = ${colors.accent}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = logout
-menu-0-0-exec = menu-open-1
-menu-0-1 = reboot
-menu-0-1-exec = menu-open-1
-menu-0-2 = power off
-menu-0-2-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
