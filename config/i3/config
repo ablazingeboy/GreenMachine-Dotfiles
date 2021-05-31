@@ -38,6 +38,12 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec alacritty
 
+# start PCManFM
+bindsym $mod+backslash exec pcmanfm
+
+# start Firefox
+bindsym $mod+w exec firefox
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
