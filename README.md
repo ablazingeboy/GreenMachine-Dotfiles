@@ -5,3 +5,5 @@
 ![screenshot_20210530_221744](https://user-images.githubusercontent.com/79222678/120133867-ea012500-c19a-11eb-83f6-4bb6f81ce974.png)
 
 Uses Alacritty, i3-gaps, Polybar, Picom, Rofi, Rofi-Power-Menu, and Rofi-Keyboard-Menu
+
+Font: Iosevka Nerd Font
