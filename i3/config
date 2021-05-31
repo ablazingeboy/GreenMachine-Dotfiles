@@ -10,6 +10,7 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
+set $sup Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -23,6 +24,7 @@ gaps inner 20
 exec_always /home/human/.fehbg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always picom -i 1.0 -f -c
+exec_always spotifyd -b pulseaudio --device-name AircraftEngine --device-type computer
 
 # Multi-screen screenshots with scrot
 bindsym --release Print exec scrot 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/Pictures/screenshots && mv $f ~/Pictures/screenshots && xclip -selection clipboard -t image/png -i ~/Pictures/screenshots/`ls -1 -t ~/Pictures/screenshots | head -1`' # All screens
@@ -48,6 +50,17 @@ bindsym $mod+Shift+p exec rofi -show power-menu -modi power-menu:rofi-power-menu
 
 # start rofi-keyboard-menu (https://github.com/ablazingeboy/rofi-keyboard-menu)
 bindsym $mod+Shift+z exec rofi -show keyboard-menu -modi keyboard-menu:rofi-keyboard-menu -theme fabian
+
+# volume controls for pulseaudio
+bindsym $sup+equal exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10%
+bindsym $sup+minus exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% 
+bindsym $sup+0 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+# media controls using playerctl
+bindsym $sup+6 exec playerctl stop
+bindsym $sup+7 exec playerctl previous
+bindsym $sup+8 exec playerctl play-pause
+bindsym $sup+9 exec playerctl next
 
 # change focus
 bindsym $mod+j focus left
