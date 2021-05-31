@@ -58,6 +58,9 @@ bindsym $mod+Tab exec rofi -show window -theme fabian
 # start rofi-power-menu (https://github.com/jluttine/rofi-power-menu)
 bindsym $mod+Shift+p exec rofi -show power-menu -modi power-menu:rofi-power-menu -theme fabian
 
+# start rofi-keyboard-menu (https://github.com/ablazingeboy/rofi-keyboard-menu)
+bindsym $mod+Shift+z exec rofi -show keyboard-menu -modi keyboard-menu:rofi-keyboard-menu -theme fabian
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
