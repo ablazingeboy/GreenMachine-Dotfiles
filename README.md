@@ -6,4 +6,6 @@
 
 Uses Alacritty, i3-gaps, Polybar, Picom, Rofi, Rofi-Power-Menu, and Rofi-Keyboard-Menu
 
+Uses [polybar-spotify](https://github.com/Jvanrhijn/polybar-spotify) for Spotify in polybar
+
 Font: Iosevka Nerd Font
