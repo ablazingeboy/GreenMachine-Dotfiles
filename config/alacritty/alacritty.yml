@@ -1,58 +1,40 @@
-# Font configuration (changes require restart)
+# .|'''''|                               '||\   /||`               '||                          
+# || .                                    ||\\.//||                 ||      ''                  
+# || |''|| '||''| .|''|, .|''|, `||''|,   ||     ||   '''|.  .|'',  ||''|,  ||  `||''|,  .|''|, 
+# ||    ||  ||    ||..|| ||..||  ||  ||   ||     ||  .|''||  ||     ||  ||  ||   ||  ||  ||..|| 
+# `|....|' .||.   `|...  `|...  .||  ||. .||     ||. `|..||. `|..' .||  || .||. .||  ||. `|...  
+#
+# Alacritty config by ABlazingEBoy                                                                               
+# Repo: https://github.com/ablazingeboy/GreenMachine-Dotfiles
+
 font:
-  # The size to use.
+
   size: 12
-  # The normal (roman) font face to use.
+
   normal:
     family: Iosevka Term
-    # Style can be specified to pick a specific face.
     style: Regular
 
-  # The bold font face
   bold:
     family: Iosevka Term 
-    # Style can be specified to pick a specific face.
     style: Bold
 
-  # The italic font face
   italic:
     family: Iosevka Term
-    # Style can be specified to pick a specific face.
     style: Italic
+    
 window:
+
   padding:
     x: 20
     y: 20
-# Colors (Horizon Dark)
+
 colors:
-  # Primary colors
+
   primary:
     background: '0x111111'
     foreground: '0xe0e0e0'
 
-  
-  # normal:
-  #   black: '0x16161c'
-  #   red: '0xe95678'
-  #   green: '0x29d398'
-  #   yellow: '0xfab795'
-  #   blue: '0x26bbd9'
-  #   magenta: '0xee64ac'
-  #   cyan: '0x59e1e3'
-  #   white: '0xd5d8da'
-
-  # # Bright colors
-  # bright:
-  #   black: '0x5b5858'
-  #   red: '0xec6a88'
-  #   green: '0x3fdaa4'
-  #   yellow: '0xfbc3a7'
-  #   blue: '0x3fc4de'
-  #   magenta: '0xf075b5'
-  #   cyan: '0x6be4e6'
-  #   white: '0xd5d8da'
-
-  # Normal colors
   normal:
     black: '0x111111'
     red: '0x4bc98a'
@@ -63,7 +45,6 @@ colors:
     cyan: '0x4bc98a'
     white: '0xd5d8da'
 
-  # Bright colors
   bright:
     black: '0x222222'
     red: '0x4bc98a'
@@ -75,21 +56,8 @@ colors:
     white: '0xd5d8da'
     
 cursor:
-  # Cursor style
-  style:
-    # Cursor shape
-    #
-    # Values for `shape`:
-    #   - ▇ Block
-    #   - _ Underline
-    #   - | Beam
-    shape: Underline
 
-    # Cursor blinking state
-    #
-    # Values for `blinking`:
-    #   - Never: Prevent the cursor from ever blinking
-    #   - Off: Disable blinking by default
-    #   - On: Enable blinking by default
-    #   - Always: Force the cursor to always blink
-    #blinking: Off
+  style:
+
+    shape: Underline
+    blinking: Off

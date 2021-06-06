@@ -1,8 +1,16 @@
 /**
- * Oxide Color theme
- * User: dikiaap
- * Copyright: Diki Ananta
- **/
+*
+* .|'''''|                               '||\   /||`               '||                          
+* || .                                    ||\\.//||                 ||      ''                  
+* || |''|| '||''| .|''|, .|''|, `||''|,   ||     ||   '''|.  .|'',  ||''|,  ||  `||''|,  .|''|, 
+* ||    ||  ||    ||..|| ||..||  ||  ||   ||     ||  .|''||  ||     ||  ||  ||   ||  ||  ||..|| 
+* `|....|' .||.   `|...  `|...  .||  ||. .||     ||. `|..||. `|..' .||  || .||. .||  ||. `|...  
+*
+* Rofi theme by ABlazingEBoy                                                                               
+* Repo: https://github.com/ablazingeboy/GreenMachine-Dotfiles
+*
+**/
+ 
 * {
     selected-normal-foreground:  @lightfg;
     foreground:                  rgba ( 196, 202, 212, 100 % );
