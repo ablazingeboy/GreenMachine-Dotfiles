@@ -8,4 +8,4 @@ Uses Alacritty, i3-gaps, Polybar, Picom, Rofi, Rofi-Power-Menu, and Rofi-Keyboar
 
 Uses [polybar-spotify](https://github.com/Jvanrhijn/polybar-spotify) for Spotify in polybar
 
-Font: Iosevka Nerd Font
+Fonts: Iosevka Nerd Font, Monapo (For Japanese)
