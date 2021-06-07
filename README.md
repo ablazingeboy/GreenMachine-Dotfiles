@@ -1,10 +1,8 @@
 # GreenMachine Dotfiles
 
-![screenshot_20210530_221416](https://user-images.githubusercontent.com/79222678/121023211-0ee43200-c771-11eb-8041-fc404715ee62.png)
+![screenshot_20210606_205418](https://user-images.githubusercontent.com/79222678/121023596-6bdfe800-c771-11eb-86c5-4fac2e8082d3.png)
 
-![screenshot_20210530_221420](https://user-images.githubusercontent.com/79222678/121023225-13104f80-c771-11eb-8d6f-8790d44e4268.png)
-
-
+![screenshot_20210606_204510](https://user-images.githubusercontent.com/79222678/121023601-6d111500-c771-11eb-88cc-b047f7d6cfc3.png)
 
 Uses Alacritty, i3-gaps, Polybar, Picom, Rofi, Rofi-Power-Menu, and Rofi-Keyboard-Menu
 
