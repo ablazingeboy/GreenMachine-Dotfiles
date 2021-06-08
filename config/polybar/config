@@ -312,7 +312,7 @@ animation-discharging-framerate = 750
 
 [module/powermenu]
 type = custom/text
-content = ""
+content = "アーチ "
 content-font = 5
 content-foreground = ${colors.accent}
 click-left = rofi -show power-menu -modi power-menu:rofi-power-menu -theme greenmachine
