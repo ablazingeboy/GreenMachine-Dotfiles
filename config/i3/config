@@ -18,7 +18,7 @@ for_window [class=".*"] border pixel 2
 gaps inner 20
 
 # autostart applications
-exec feh --bg-center city.jpg
+exec feh --bg-fill --randomize /home/human/Documents/wallpapers/*
 exec --no-startup-id $HOME/.config/polybar/launch.sh
 # exec picom -i 1.0 -f -c
 # exec spotifyd -b pulseaudio --device-name AircraftEngine --device-type computer
